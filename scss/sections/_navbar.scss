@@ -68,6 +68,13 @@
     color: white;
  }
 
+ .navbar a:visited{
+
+  background-color: colors.$morning-blue;
+  color: white;
+
+ }
+
 #navbar__icons--left{
 
   float: left;

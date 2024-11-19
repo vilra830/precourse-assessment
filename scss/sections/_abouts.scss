@@ -60,7 +60,8 @@
 .about__paragraph {
     @include mixins.text-description(fonts.$open-sans, colors.$black-olive, justify);
     font-size: smaller;
-}
+    padding: 5px 20px 5px 20px;
+ }
 
     .about__information {
 
@@ -93,5 +94,11 @@
       border-bottom: 2px solid #dddddd;
       padding: 8px;
       
+
+    }
+
+    .about__phone {
+
+      @include mixins.flex(column, wrap);
 
     }
