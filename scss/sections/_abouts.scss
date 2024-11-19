@@ -1,6 +1,8 @@
 @use '../partials/colors';
 @use '../partials/mixins';
 @use '../partials/fonts';
+@use '../partials/media-queries' as q;
+
 
 
 
@@ -9,6 +11,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    @include q.tablet{
+
+      width: 90%;
+      margin: auto;
+
+      
+  }
+
+  @include q.large-tablet {
+      width: 80%;
+      margin: auto;
+
+
+  }
+
+  @include q.laptop{
+      width: 80%;
+      margin: auto;
+
+  }
+
+  @include q.desktop{
+
+      width: 80%;
+      margin: auto;
+
+  }
+
+
+
 }
 
 .about__heading{

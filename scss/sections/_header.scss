@@ -1,10 +1,44 @@
 @use '../partials/colors';
 @use '../partials/mixins';
 @use '../partials/fonts';
+@use '../partials/media-queries' as q;
+
+
 
 .header {
    height: 40vh; 
    display: flex; 
+
+
+   @include q.tablet{
+
+    width: 90%;
+    margin: auto;
+
+    
+}
+
+@include q.large-tablet {
+    width: 80%;
+    margin: auto;
+
+
+}
+
+@include q.laptop{
+    width: 80%;
+    margin: auto;
+
+}
+
+@include q.desktop{
+
+    width: 80%;
+    margin: auto;
+
+}
+
+
 
 }
 .header__container {
