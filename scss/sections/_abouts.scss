@@ -1,0 +1,64 @@
+@use '../partials/colors';
+@use '../partials/mixins';
+@use '../partials/fonts';
+
+
+
+.about {
+    background-color: colors.$light-salmon-pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__heading{
+
+   @include mixins.text-description(fonts.$rammetto, white, center);
+   padding: 0;
+}
+
+.about__quote{
+
+    @include mixins.text-description(fonts.$rammetto, colors.$black-olive, center);
+    font-size: smaller;
+
+}
+
+.about__paragraph {
+    @include mixins.text-description(fonts.$open-sans, colors.$black-olive, justify);
+    font-size: smaller;
+}
+
+    .about__information {
+
+    @include mixins.flex(column, wrap);
+
+   
+    }
+
+    .about__location {
+    
+        
+    border: 1px solid white;
+    background-color: white;
+    width: 100%;
+    object-fit: fill;
+    align-self: center;
+    padding: 5px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      align-self: center;
+        
+
+    }
+    
+    td, th {
+        @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+
+      border-bottom: 2px solid #dddddd;
+      padding: 8px;
+      
+
+    }

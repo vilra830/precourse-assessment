@@ -1,0 +1,53 @@
+@use '../partials/colors';
+@use '../partials/mixins';
+@use '../partials/fonts';
+
+.header {
+   height: 40vh; 
+   display: flex; 
+
+}
+.header__container {
+    background-color: #689572;
+    width:50%;
+    height:100%;
+
+    
+}
+
+.header__container--primary{
+
+    @include mixins.flex(column, center);
+    align-content: space-around;
+    
+}
+.header__heading {
+    @include mixins.text-description(fonts.$rammetto, white, start);
+       
+
+}
+
+
+.header__paragraph{
+    @include mixins.text-description(fonts.$open-sans, white, start);
+}
+
+.header__button > a {
+    border: 2px solid white;
+    text-decoration: none;
+    @include mixins.text-description(fonts.$open-sans, white, start);
+    padding: 5px 15px 5px 15px;
+
+
+}
+
+.header__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+
+

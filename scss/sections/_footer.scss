@@ -1,0 +1,35 @@
+@use '../partials/colors';
+@use '../partials/mixins';
+@use '../partials/fonts';
+
+
+
+
+footer{
+    
+    @include mixins.flex(row, space-between);
+    @include mixins.text-description(fonts.$open-sans, white, center);
+    align-items: center;
+    background-color: #689572;
+    height: 50px;
+
+
+
+
+}
+
+.footer__icon {
+width:33.33%;
+font-size: 20px;
+
+
+}
+
+.footer__icon--primary {
+    color: white;
+}
+
+
+
+
+

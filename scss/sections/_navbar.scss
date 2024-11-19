@@ -1,0 +1,47 @@
+@use '../partials/colors';
+@use '../partials/mixins';
+@use '../partials/fonts';
+
+.navbar {
+  background-color: colors.$dust-storm;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+
+
+
+  }
+
+  
+  /* Navbar links */
+  .navbar__icons  {
+  float: right;
+  display: block;
+  @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+  text-decoration: none;
+  padding: 14px;
+
+  }
+
+  .navbar a:hover{
+
+
+
+    background-color: colors.$dust-storm;
+    color: greenyellow;
+ 
+}
+
+ .navbar a:active{
+
+    background-color: colors.$morning-blue;
+    color: white;
+ }
+
+#navbar__icons--left{
+
+  float: left;
+  padding-left: 70px;
+  font-size: 20px;
+  color: colors.$dust-storm;
+  }

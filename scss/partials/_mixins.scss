@@ -1,0 +1,32 @@
+
+@mixin flex($direction, $justify) {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:  $direction;
+    justify-content: $justify;
+
+}
+
+@mixin colors($bg-color, $text-color) {
+
+    background-color: $bg-color;
+    color: $text-color;
+
+}
+
+@mixin content-center{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-description($fontstyle, $font-color, $alignment) {
+    font-family: $fontstyle ;
+    color: $font-color;
+    text-align: $alignment;
+
+
+}

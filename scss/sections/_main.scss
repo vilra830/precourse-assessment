@@ -1,0 +1,99 @@
+@use '../partials/colors';
+@use '../partials/mixins';
+@use '../partials/fonts';
+@use '../partials/media-queries' as q;
+
+
+.main {
+   display: flex; 
+   flex-wrap: wrap;
+   gap: 15px;
+   width: 100%;
+
+    @include q.tablet{
+
+        width: 80%;
+    }
+
+    @include q.large-tablet {
+        width: 80%;
+
+    }
+
+    @include q.laptop{
+        width: 100%;
+    }
+
+    @include q.desktop{
+
+        width: 100%;
+    }
+  
+}
+
+.main__heading {
+
+    @include mixins.text-description(fonts.$rammetto, colors.$dust-storm, center);
+    width: 100%;
+}
+
+
+ details {
+   width: 100%;
+} 
+
+details > summary {
+
+    padding: 5px;
+    background-color: #EBC9C4;
+    cursor: pointer;
+    @include mixins.text-description(fonts.$open-sans, colors.$black-olive, left);
+    font-weight: bolder;
+}
+
+.menu {
+    
+    @include mixins.flex(row, space-between);
+
+    
+}
+ 
+.menu__item {
+
+    background-color: #EBC9C4;
+    display: flex;
+    flex-direction: column; 
+    @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+    padding: 5px;
+    height: 40%;
+    width: 30%;
+    margin: 10px;
+
+
+}
+
+    .food_caution{
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .fa-solid  {
+
+        color: #689572;
+        padding-right: 5px;
+
+    }
+.space {
+
+        @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+        font-size: 12px;
+        padding-bottom: 5px;
+}
+
+.menu__image{
+
+    padding: 10px; 
+    }
+
