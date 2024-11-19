@@ -256,6 +256,11 @@ details > summary {
   color: white;
 }
 
+.navbar a:visited {
+  background-color: #82A289;
+  color: white;
+}
+
 #navbar__icons--left {
   float: left;
   padding-left: 70px;
@@ -461,6 +466,7 @@ button[type=submit]:hover {
   color: #404040;
   text-align: justify;
   font-size: smaller;
+  padding: 5px 20px 5px 20px;
 }
 
 .about__information {
@@ -491,6 +497,13 @@ td, th {
   text-align: center;
   border-bottom: 2px solid #dddddd;
   padding: 8px;
+}
+
+.about__phone {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: wrap;
 }
 
 * {
