@@ -5,7 +5,7 @@
 
 
 .navbar {
-  background-color: colors.$dust-storm;
+  background-color: colors.$black-olive;
   position: sticky;
   top: 0;
   overflow: hidden;
@@ -53,32 +53,31 @@
 
   }
 
-  .navbar a:hover{
-
-
-
-    background-color: colors.$dust-storm;
-    color: greenyellow;
- 
-}
 
  .navbar a:active{
 
-    background-color: colors.$morning-blue;
-    color: white;
+  @include mixins.colors(colors.$oxley, white);
+
  }
 
  .navbar a:visited{
 
-  background-color: colors.$morning-blue;
-  color: white;
+  @include mixins.colors(colors.$morning-blue, white);
+
 
  }
+ .navbar a:hover{
+
+
+  @include mixins.colors( white , colors.$black-olive);
+
+
+}
 
 #navbar__icons--left{
 
   float: left;
   padding-left: 70px;
   font-size: 20px;
-  color: colors.$dust-storm;
+  color: white;
   }

@@ -8,10 +8,8 @@
 
 .about {
     background-color: colors.$light-salmon-pink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+
+    @include mixins.flex(column, center);
     @include q.tablet{
 
       width: 90%;
@@ -47,7 +45,7 @@
 .about__heading{
 
    @include mixins.text-description(fonts.$rammetto, white, center);
-   padding: 0;
+   width: 100%;
 }
 
 .about__quote{
@@ -65,7 +63,7 @@
 
     .about__information {
 
-    @include mixins.flex(column, wrap);
+    @include mixins.flex(column, center);
 
    
     }
@@ -75,7 +73,7 @@
         
     border: 1px solid white;
     background-color: white;
-    width: 100%;
+    width: 60%;
     object-fit: fill;
     align-self: center;
     padding: 5px;
@@ -91,7 +89,7 @@
     td, th {
         @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
 
-      border-bottom: 2px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
       padding: 8px;
       
 
@@ -99,6 +97,32 @@
 
     .about__phone {
 
-      @include mixins.flex(column, wrap);
+      @include mixins.flex(row, space-around);
+      padding-bottom: 10px;
+      gap: 5px;
+      align-items: center;
+    
 
+    }
+
+    .about__heading--details {
+
+      @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+      font-weight: bold;
+
+    }
+
+    .about__phone--details {
+
+        width: 20%;
+        padding: 10px;
+        text-align: center;
+        height: auto;
+
+    }
+
+    #about__icons {
+
+      color: colors.$black-olive;
+      padding: 5px;
     }
