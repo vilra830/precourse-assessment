@@ -12,21 +12,30 @@
 
     @include q.tablet{
 
-        width: 80%;
+        width: 90%;
+        margin: auto;
+
+        
     }
 
     @include q.large-tablet {
         width: 80%;
+        margin: auto;
+
 
     }
 
     @include q.laptop{
-        width: 100%;
+        width: 80%;
+        margin: auto;
+
     }
 
     @include q.desktop{
 
-        width: 100%;
+        width: 80%;
+        margin: auto;
+
     }
   
 }

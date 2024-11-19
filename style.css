@@ -2,6 +2,30 @@
   height: 40vh;
   display: flex;
 }
+@media screen and (min-width: 577px) {
+  .header {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .header {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .header {
+    width: 80%;
+    margin: auto;
+  }
+}
 
 .header__container {
   background-color: #689572;
@@ -52,22 +76,26 @@
 }
 @media screen and (min-width: 577px) {
   .main {
-    width: 80%;
+    width: 90%;
+    margin: auto;
   }
 }
 @media screen and (min-width: 769px) {
   .main {
     width: 80%;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1025px) {
   .main {
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1081px) {
   .main {
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -182,6 +210,30 @@ details > summary {
   top: 0;
   overflow: hidden;
 }
+@media screen and (min-width: 577px) {
+  .navbar {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .navbar {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .navbar {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .navbar {
+    width: 80%;
+    margin: auto;
+  }
+}
 
 /* Navbar links */
 .navbar__icons {
@@ -223,6 +275,30 @@ footer {
   background-color: #689572;
   height: 50px;
 }
+@media screen and (min-width: 577px) {
+  footer {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  footer {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  footer {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  footer {
+    width: 80%;
+    margin: auto;
+  }
+}
 
 .footer__icon {
   width: 33.33%;
@@ -238,6 +314,30 @@ footer {
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 577px) {
+  .form_container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .form_container {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .form_container {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .form_container {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .form__heading {
@@ -316,6 +416,30 @@ button[type=submit]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 577px) {
+  .about {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .about__heading {

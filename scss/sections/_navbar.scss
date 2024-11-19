@@ -1,12 +1,42 @@
 @use '../partials/colors';
 @use '../partials/mixins';
 @use '../partials/fonts';
+@use '../partials/media-queries' as q;
+
 
 .navbar {
   background-color: colors.$dust-storm;
   position: sticky;
   top: 0;
   overflow: hidden;
+
+  @include q.tablet{
+
+    width: 90%;
+    margin: auto;
+
+    
+}
+
+@include q.large-tablet {
+    width: 80%;
+    margin: auto;
+
+
+}
+
+@include q.laptop{
+    width: 80%;
+    margin: auto;
+
+}
+
+@include q.desktop{
+
+    width: 80%;
+    margin: auto;
+
+}
 
 
 
