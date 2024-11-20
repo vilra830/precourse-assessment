@@ -7,34 +7,41 @@
     background-color:#FAA196 ;
     @include mixins.flex(row, center);
     gap: 15px;
+
+    &__heading {
+        @include mixins.text-description(fonts.$rammetto, white, center);
+        width:100%;
+        font-size: xx-large;
+        }
+
+        &__item{
+            border: 2px solid white;
+            width: 33.33%;
+            @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+            font-style: italic;
+            font-size: small;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+         &__paragraph--name{
+            float: left;
+        }
+        
+        &__paragraph--date{
+            float: right;
+        }
+
     }
     
-    .review__heading {
-    @include mixins.text-description(fonts.$rammetto, white, center);
-    width:100%;
-    font-size: xx-large;
-    }
 
-    .review__item{
-        border: 2px solid white;
-        width: 33.33%;
-        @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
-        font-style: italic;
-        font-size: small;
-        font-weight: bold;
-        padding: 10px;
-        margin-bottom: 15px;
-    }
+
+
     .fa-quote-right, .fa-quote-left {
 
         color: colors.$black-olive;
     }
-    .review__paragraph--name{
-        float: left;
-    }
-    
-    .review__paragraph--date{
-        float: right;
-    }
+
 
  
