@@ -37,38 +37,38 @@
       margin: auto;
 
   }
+  &__heading{
 
+    @include mixins.text-description(fonts.$rammetto, white, center);
+    width: 100%;
 
+    &--details {
 
-}
+      @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+      font-weight: bold;
 
-.about__heading{
-
-   @include mixins.text-description(fonts.$rammetto, white, center);
-   width: 100%;
-}
-
-.about__quote{
-
-    @include mixins.text-description(fonts.$rammetto, colors.$black-olive, center);
-    font-size: smaller;
-
-}
-
-.about__paragraph {
-    @include mixins.text-description(fonts.$open-sans, colors.$black-olive, justify);
-    font-size: smaller;
-    padding: 5px 20px 5px 20px;
- }
-
-    .about__information {
-
-    @include mixins.flex(column, center);
-
-   
     }
+    
+ }
+ &__quote{
 
-    .about__location {
+  @include mixins.text-description(fonts.$rammetto, colors.$black-olive, center);
+  font-size: smaller;
+
+}
+&__paragraph {
+  @include mixins.text-description(fonts.$open-sans, colors.$black-olive, justify);
+  font-size: smaller;
+  padding: 5px 20px 5px 20px;
+}
+&__information {
+
+  @include mixins.flex(column, center);
+
+ 
+  }
+
+  &__location {
     
         
     border: 1px solid white;
@@ -78,6 +78,30 @@
     align-self: center;
     padding: 5px;
     }
+
+    &__phone {
+
+      @include mixins.flex(row, space-around);
+      padding-bottom: 10px;
+      gap: 5px;
+      align-items: center;
+
+      &--details {
+
+        width: 20%;
+        padding: 10px;
+        text-align: center;
+        height: auto;
+  
+    }
+  
+    
+
+    }
+
+
+}
+
     table {
       border-collapse: collapse;
       width: 50%;
@@ -95,31 +119,11 @@
 
     }
 
-    .about__phone {
+  
 
-      @include mixins.flex(row, space-around);
-      padding-bottom: 10px;
-      gap: 5px;
-      align-items: center;
-    
 
-    }
 
-    .about__heading--details {
 
-      @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
-      font-weight: bold;
-
-    }
-
-    .about__phone--details {
-
-        width: 20%;
-        padding: 10px;
-        text-align: center;
-        height: auto;
-
-    }
 
     #about__icons {
 

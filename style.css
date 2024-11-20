@@ -26,13 +26,11 @@
     margin: auto;
   }
 }
-
 .header__container {
   background-color: #689572;
   width: 50%;
   height: 100%;
 }
-
 .header__container--primary {
   display: flex;
   flex-wrap: wrap;
@@ -40,19 +38,16 @@
   justify-content: center;
   align-content: space-around;
 }
-
 .header__heading {
   font-family: "Rammetto One";
   color: white;
   text-align: start;
 }
-
 .header__paragraph {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
   text-align: start;
 }
-
 .header__button > a {
   border: 2px solid white;
   text-decoration: none;
@@ -61,7 +56,6 @@
   text-align: start;
   padding: 5px 15px 5px 15px;
 }
-
 .header__img {
   width: 100%;
   height: 100%;
@@ -98,7 +92,6 @@
     margin: auto;
   }
 }
-
 .main__heading {
   font-family: "Rammetto One";
   color: #EBC9C4;
@@ -126,7 +119,6 @@ details > summary {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .menu__item {
   background-color: #EBC9C4;
   display: flex;
@@ -138,6 +130,9 @@ details > summary {
   height: 40%;
   width: 30%;
   margin: 10px;
+}
+.menu__image {
+  padding: 10px;
 }
 
 .food_caution {
@@ -158,10 +153,6 @@ details > summary {
   padding-bottom: 5px;
 }
 
-.menu__image {
-  padding: 10px;
-}
-
 .review {
   background-color: #FAA196;
   display: flex;
@@ -170,7 +161,6 @@ details > summary {
   justify-content: center;
   gap: 15px;
 }
-
 .review__heading {
   font-family: "Rammetto One";
   color: white;
@@ -178,7 +168,6 @@ details > summary {
   width: 100%;
   font-size: xx-large;
 }
-
 .review__item {
   border: 2px solid white;
   width: 33.33%;
@@ -191,17 +180,15 @@ details > summary {
   padding: 10px;
   margin-bottom: 15px;
 }
-
-.fa-quote-right, .fa-quote-left {
-  color: #404040;
-}
-
 .review__paragraph--name {
   float: left;
 }
-
 .review__paragraph--date {
   float: right;
+}
+
+.fa-quote-right, .fa-quote-left {
+  color: #404040;
 }
 
 .navbar {
@@ -268,7 +255,7 @@ details > summary {
   color: white;
 }
 
-footer {
+.footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -281,35 +268,33 @@ footer {
   height: 50px;
 }
 @media screen and (min-width: 577px) {
-  footer {
+  .footer {
     width: 90%;
     margin: auto;
   }
 }
 @media screen and (min-width: 769px) {
-  footer {
+  .footer {
     width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1025px) {
-  footer {
+  .footer {
     width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1081px) {
-  footer {
+  .footer {
     width: 80%;
     margin: auto;
   }
 }
-
 .footer__icon {
   width: 33.33%;
   font-size: 20px;
 }
-
 .footer__icon--primary {
   color: white;
 }
@@ -409,13 +394,6 @@ button[type=submit]:hover {
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
 .about {
   background-color: #FAA196;
   display: flex;
@@ -447,21 +425,24 @@ button[type=submit]:hover {
     margin: auto;
   }
 }
-
 .about__heading {
   font-family: "Rammetto One";
   color: white;
   text-align: center;
   width: 100%;
 }
-
+.about__heading--details {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #404040;
+  text-align: center;
+  font-weight: bold;
+}
 .about__quote {
   font-family: "Rammetto One";
   color: #404040;
   text-align: center;
   font-size: smaller;
 }
-
 .about__paragraph {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #404040;
@@ -469,14 +450,12 @@ button[type=submit]:hover {
   font-size: smaller;
   padding: 5px 20px 5px 20px;
 }
-
 .about__information {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
-
 .about__location {
   border: 1px solid white;
   background-color: white;
@@ -484,6 +463,21 @@ button[type=submit]:hover {
   object-fit: fill;
   align-self: center;
   padding: 5px;
+}
+.about__phone {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  gap: 5px;
+  align-items: center;
+}
+.about__phone--details {
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  height: auto;
 }
 
 table {
@@ -498,30 +492,6 @@ td, th {
   text-align: center;
   border-bottom: 1px solid #dddddd;
   padding: 8px;
-}
-
-.about__phone {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 10px;
-  gap: 5px;
-  align-items: center;
-}
-
-.about__heading--details {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
-  text-align: center;
-  font-weight: bold;
-}
-
-.about__phone--details {
-  width: 20%;
-  padding: 10px;
-  text-align: center;
-  height: auto;
 }
 
 #about__icons {

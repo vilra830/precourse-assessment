@@ -6,7 +6,7 @@
 
 
 
-footer{
+.footer{
     
     @include mixins.flex(row, space-between);
     @include mixins.text-description(fonts.$open-sans, white, center);
@@ -42,21 +42,21 @@ footer{
 
     }
 
-
-
+    &__icon {
+        width:33.33%;
+        font-size: 20px;
+        
+        
+            &--primary {
+                color: white;
+            }
 
 }
-
-.footer__icon {
-width:33.33%;
-font-size: 20px;
-
-
 }
 
-.footer__icon--primary {
-    color: white;
-}
+
+
+
 
 
 
